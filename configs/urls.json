@@ -1,0 +1,121 @@
+[
+  {
+    "id": "uber",
+    "name": "Uber",
+    "url": "https://www.uber.com/blog/engineering/",
+    "article_selector": "[data-testid=\"newsroom-article-feed-card\"]",
+    "title_selector": "a[href]",
+    "link_selector": "a[href]",
+    "date_selector": "[data-baseweb=\"block\"]",
+    "content_selector": "main",
+    "next_page_selector": "a[aria-label^=\"next page\"]",
+    "max_pages": 3
+  },
+  {
+    "id": "meta",
+    "name": "Meta",
+    "type": "feed",
+    "url": "https://engineering.fb.com/feed/",
+    "page_param": "paged",
+    "max_pages": 5,
+    "article_selector": "article",
+    "title_selector": "h1",
+    "link_selector": "a",
+    "date_selector": "time",
+    "content_selector": "article"
+  },
+  {
+    "id": "google-developers",
+    "name": "Google Developers",
+    "type": "feed",
+    "url": "https://developers.googleblog.com/feeds/posts/default",
+    "date_from_article": true,
+    "article_selector": "article",
+    "title_selector": "h1",
+    "link_selector": "a",
+    "date_selector": "time",
+    "content_selector": "main"
+  },
+  {
+    "id": "google-cloud",
+    "name": "Google Cloud",
+    "type": "feed",
+    "url": "https://cloudblog.withgoogle.com/rss/",
+    "feed_urls": [
+      "https://cloudblog.withgoogle.com/products/ai-machine-learning/rss/",
+      "https://cloudblog.withgoogle.com/products/data-analytics/rss/",
+      "https://cloudblog.withgoogle.com/products/devops-sre/rss/",
+      "https://cloudblog.withgoogle.com/products/containers-kubernetes/rss/",
+      "https://cloudblog.withgoogle.com/products/application-development/rss/"
+    ],
+    "article_selector": "article",
+    "title_selector": "h1",
+    "link_selector": "a",
+    "date_selector": "time",
+    "content_selector": "main"
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "url": "https://devblogs.microsoft.com/",
+    "page_url_template": "https://devblogs.microsoft.com/page/{page}/",
+    "max_pages": 3,
+    "article_selector": ".masonry-card",
+    "title_selector": "h3 a",
+    "link_selector": "h3 a",
+    "date_selector": ".card-top",
+    "content_selector": "article"
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "url": "https://aws.amazon.com/blogs/architecture/",
+    "article_selector": "article",
+    "title_selector": "h2 a, h3 a, h1 a",
+    "link_selector": "h2 a, h3 a, h1 a",
+    "date_selector": "time[datetime], time",
+    "content_selector": "article"
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "type": "feed",
+    "url": "https://openai.com/news/rss.xml",
+    "article_selector": "article",
+    "title_selector": "h1",
+    "link_selector": "a",
+    "date_selector": "time",
+    "content_selector": "main"
+  },
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "url": "https://www.anthropic.com/news",
+    "article_selector": "li[data-listing-row]",
+    "title_selector": "a[class*=\"title-link\"]",
+    "link_selector": "a[class*=\"title-link\"]",
+    "date_selector": "time",
+    "content_selector": "main"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "url": "https://github.blog/",
+    "article_selector": "article",
+    "title_selector": "h2 a, h3 a, h1 a",
+    "link_selector": "h2 a, h3 a, h1 a",
+    "date_selector": "time[datetime], time",
+    "content_selector": "main"
+  },
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "type": "feed",
+    "url": "https://medium.com/feed/netflix-techblog",
+    "article_selector": "article",
+    "title_selector": "h1",
+    "link_selector": "a",
+    "date_selector": "time",
+    "content_selector": "article"
+  }
+]

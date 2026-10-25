@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agregador-techblogs"
+version = "0.1.0"
+description = "Coleta e resume publicacoes recentes de blogs de tecnologia."
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.12,<5",
+    "defusedxml>=0.7,<1",
+    "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<9",
+    "ruff>=0.6,<1",
+]
+
+[tool.setuptools.packages.find]
+include = ["scripts*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

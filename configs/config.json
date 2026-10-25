@@ -1,0 +1,31 @@
+{
+  "frequency_days": 7,
+  "database_path": "data/techblogs.sqlite3",
+  "request_timeout_seconds": 20,
+  "max_posts_per_source": 30,
+  "max_article_characters": 18000,
+  "user_agent": "TechBlogsAggregator/0.1 (+https://github.com/)",
+  "categories": [
+    "Dados e IA",
+    "Engenharia de Software",
+    "Infraestrutura e Cloud",
+    "Segurança",
+    "UX e Design",
+    "Negócios e Inovação"
+  ],
+  "email": {
+    "smtp_host": "smtp-relay.brevo.com",
+    "smtp_port": 587,
+    "use_starttls": true,
+    "recipient": "robertovictor_rj@hotmail.com"
+  },
+  "llm": {
+    "command": "copilot",
+    "arguments": [
+      "-p",
+      "{prompt}"
+    ],
+    "timeout_seconds": 120
+  }
+}
+
